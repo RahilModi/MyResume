@@ -1,0 +1,204 @@
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+    \begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Rahil} \headerlastnamestyle{Modi} \\
+	\vspace{1mm}
+	{\faEnvelope\ rmodi10@gmail.com} | {\faMobile\ (510) 585 - 7576} | {\faMapMarker\ San Jose, CA} | {\faGithub\ rahilmodi} | {\faLinkedin\ rmodi10} |{\faLink\ rahilmodi.github.io}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Education}
+\begin{cventries}
+	\cventry
+	{
+	\begin{tabular}{ l l }
+        \textbf{MS} in \textbf{Software Engineering} (GPA: 3.7)\hspace{1.75cm} & \textbf{Specialization: Enterprise Software Technologies} \\ 
+    \end{tabular}
+    }
+	{San Jose State University}
+	{San Jose, CA}
+	{Jan 2017 - Dec 2018}
+	{
+	\begin{cvcoursework}
+	\vspace{2mm}
+	\begin{tabular}{  m{6em}  m{16cm} } 
+    \textbf{Coursework : }& {OOP \& Data Structures, Operating System, Enterprise Software Platforms, Enterprise Distributed Systems, Enterprise Application Development, Database Systems, Software Systems Engineering, Cloud Technologies} \\ 
+    \end{tabular}
+    \end{cvcoursework}
+	}
+	{}
+	\cventry
+	{
+        \textbf{BE} in \textbf{Electronics and Communication} (GPA: 3.33) 
+    }
+	{L. D. College of Engineering (GTU)}
+	{Ahmedabad, India}
+	{Aug 2009 - Jun 2013}
+	{}
+\end{cventries}
+
+\vspace{-7mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{\textbf{Systems Engineer}}
+	{Tata Consultancy Services (Nissan Motors Co. Ltd.)}
+	{Pune, India}
+	{Mar 2014 – Dec 2016}
+	{
+	\vspace{1mm}
+	\begin{cvresponsiblties}
+		\item {Designed \& implemented 10+ features and enhanced existing functionalities of Automotive Diagnostic Software in C++.}
+		\item {Resolved 20+ issues by static-code \& log analysis and fixed memory leaks leading to increase in performance.}
+		\item {Developed a POC of next-generation tool using RESTful services based on SOA in Java.}
+		\item {Assisted as a mentor in the on-boarding process and served as a release and build SPOC.}
+	\end{cvresponsiblties}
+	\vspace{-2mm}
+	}
+	\cventry
+	{\textbf{Software Engineer Intern}}
+	{Innoventaa Technocrats}
+	{Ahmedabad, India}
+	{Aug 2013 – Jan 2014}
+	{
+	\vspace{1mm}
+	\begin{cvresponsiblties}
+		\item {Developed an eCommerce prototype with features like product, purchase, user management.}
+		\item {Technologies used: Java, J2EE, JSP, servlet, hibernate, JDBC, MySQL}
+		\end{cvresponsiblties}
+	}
+\end{cventries}
+\vspace{-5.5mm}
+\cvsection{Skills}
+\vspace{-4mm}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.25}{\begin{tabular}{ l l }
+	    \vspace{0.4mm}
+		Languages:  & {\skill{ Java, JavaScript(ES6), C++, Python}} \\
+		\vspace{0.4mm}
+		Back-End Technologies:  & {\skill{ Spring, Hibernate, J2EE, flask, Node.js, RabbitMQ, MVC, AWS Lambda, Kafka, Zookeeper}} \\
+		\vspace{0.4mm}
+		Front-End Technologies:  & {\skill{ HTML5, CSS3, Bootstrap, AngularJS, React, Redux}} \\
+		\vspace{0.4mm}
+		Tools/Libraries:  & {\skill{ Git, SVN, socket.io, Maven,  eclipse, IntelliJ, JUnit, OpenCV, Docker}} \\
+		\vspace{0.4mm}
+		Databases:  & {\skill{ MySQL, SQLite, redis, MongoDB, cassandra, DynamoDB}} \\
+		\vspace{0.4mm}
+		Design \& Development:  & {\skill{ Agile, Scrum, Design Patterns, OAuth2, REST, SOAP, GraphQL}} \\
+		\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+\vspace{-11mm}
+\cvsection{Projects}
+\begin{cventries}
+	\cvprojectentry
+	{
+	\begin{cvitems}
+    	\item {A highly scalable, fault-tolerant and distributed service to shorten URLs developed in Java/Spring Boot. }
+    	\item {Achieved high coordination and availability using zookeeper and faster response time using redis caching.}
+	\end{cvitems}
+	}
+	{TinyURL}
+	{Spring Boot/Security, Zookeeper, Cassandra, redis, OAuth2}
+	\cvprojectentry
+	{
+	\begin{cvitems}
+    	\item {A 3-tier web application to post or volunteer for a work.}
+    	\item {Key features : real-time \& email notification, authentication using OAuth2 and badge sharing on Facebook.}
+	\end{cvitems}
+	}
+	{Help Other}
+	{MEAN, socket.io, passport.js, heroku}
+	\cvprojectentry
+	{
+	\begin{cvitems}
+    	\item {A server-less pizza ordering system based on AWS lamda and REST APIs, developed in Python using API Gateway and data persisted in DynamoDB.}
+	\end{cvitems}
+	}
+	{Pizza Ordering System}
+	{AWS lambda, DynamoDB, API Gateway, Python}
+	\cvprojectentry
+	{
+	\begin{cvitems}
+    	\item {Built a single page application for attendance and immigration system based on face recognition.}
+    	\item {Dockerized application developed in python-flask using OpenCV and cloud based data persistence.}
+	\end{cvitems}
+	}
+	{Face Recognition web app}
+	{Python, flask, OpenCV, mLab, Angular, Docker, AWS EC2}
+	\cvprojectentry
+	{
+	\begin{cvitems}
+    	\item {Developed a real-time order status analysis system to track \& visualize changes in orders status every 5 seconds.}
+    	\item {Accomplished high scalability using multi-broker Kafka with spark streaming and zeppelin \& D3.js for visualization.}
+	\end{cvitems}
+	}
+	{Real-time Order Status Analysis}
+	{Java, Kafka, Spark, Zeppelin, D3.js}
+    \vspace{-2mm}
+\end{cventries}
+\vspace{-3mm}
+\cvsection{Award}
+\begin{cvhonors}
+	\cvhonor
+	{TCS On The Spot}
+	{for outstanding performance and bug free feature roll out.}
+	{Pune, India}
+	{Mar 2016}
+\end{cvhonors}
+\ 
+\end{document}
